@@ -7,3 +7,7 @@ C:\Users\ngann\source\repos\Task_1\Task_1\obj\Debug\Task_1.csproj.GenerateResour
 C:\Users\ngann\source\repos\Task_1\Task_1\obj\Debug\Task_1.csproj.CoreCompileInputs.cache
 C:\Users\ngann\source\repos\Task_1\Task_1\obj\Debug\Task_1.exe
 C:\Users\ngann\source\repos\Task_1\Task_1\obj\Debug\Task_1.pdb
+C:\Users\ngann\source\repos\Task_1\Task_1\bin\Debug\GMap.NET.Core.dll
+C:\Users\ngann\source\repos\Task_1\Task_1\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\ngann\source\repos\Task_1\Task_1\obj\Debug\Task_1.Form1.resources
+C:\Users\ngann\source\repos\Task_1\Task_1\obj\Debug\Task_1.csproj.CopyComplete
