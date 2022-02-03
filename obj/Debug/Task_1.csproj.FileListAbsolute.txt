@@ -1,0 +1,9 @@
+C:\Users\ngann\source\repos\Task_1\Task_1\bin\Debug\Task_1.exe.config
+C:\Users\ngann\source\repos\Task_1\Task_1\bin\Debug\Task_1.exe
+C:\Users\ngann\source\repos\Task_1\Task_1\bin\Debug\Task_1.pdb
+C:\Users\ngann\source\repos\Task_1\Task_1\obj\Debug\Task_1.csproj.AssemblyReference.cache
+C:\Users\ngann\source\repos\Task_1\Task_1\obj\Debug\Task_1.Properties.Resources.resources
+C:\Users\ngann\source\repos\Task_1\Task_1\obj\Debug\Task_1.csproj.GenerateResource.cache
+C:\Users\ngann\source\repos\Task_1\Task_1\obj\Debug\Task_1.csproj.CoreCompileInputs.cache
+C:\Users\ngann\source\repos\Task_1\Task_1\obj\Debug\Task_1.exe
+C:\Users\ngann\source\repos\Task_1\Task_1\obj\Debug\Task_1.pdb
