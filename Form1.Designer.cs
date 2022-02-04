@@ -49,7 +49,7 @@ namespace Task_1
             this.gMap.RetryLoadTile = 0;
             this.gMap.RoutesEnabled = true;
             this.gMap.ShowTileGridLines = false;
-            this.gMap.Size = new System.Drawing.Size(757, 584);
+            this.gMap.Size = new System.Drawing.Size(1007, 412);
             this.gMap.TabIndex = 0;
             this.gMap.Zoom = 0D;
             this.gMap.Load += new System.EventHandler(this.gMapControl1_Load);

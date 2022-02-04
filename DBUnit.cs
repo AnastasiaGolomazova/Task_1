@@ -8,7 +8,6 @@ namespace Task_1
 {
     class DBUnit
     {
-
         private int id { get; set; }
         private string name { get; set; }
         private double longitude { get; set; }

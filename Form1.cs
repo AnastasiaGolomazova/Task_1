@@ -13,7 +13,7 @@ using GMap.NET.MapProviders;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.ToolTips;
 using GMap.NET.WindowsForms.Markers;
-
+using System.Data.SqlClient;
 
 
 namespace Task_1
@@ -23,7 +23,7 @@ namespace Task_1
         LocationDB dataBase = new LocationDB();
         public Form1()
         {
-            InitializeComponent();
+              InitializeComponent();
         }
 
         private void gMapControl1_Load(object sender, EventArgs e)
@@ -45,6 +45,16 @@ namespace Task_1
             gMap.GrayScaleMode = false;
             gMap.MarkersEnabled = true;
             gMap.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionWithoutCenter;
+
+            dataBase.OpenBbConnection();
+
+            if (!dataBase.IsConnectionOpen())
+            {
+                MessageBox.Show("Connection error", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+
 
 
 
