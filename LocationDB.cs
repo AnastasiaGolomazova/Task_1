@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -10,7 +7,8 @@ namespace Task_1
 {
     class LocationDB
     {
-         SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS02; Database=CoordinatesLocation;  Integrated Security=SSPI; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        private const string connectionString = @"Data Source=.\SQLEXPRESS02; Database=CoordinatesLocation;  Integrated Security=SSPI; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private SqlConnection connection = new SqlConnection(connectionString);
 
         public void OpenBbConnection()
         {
@@ -30,10 +28,6 @@ namespace Task_1
         public void CloseBdConnection()
         {
             connection.Close();
-        }
-        public SqlConnection GetConnection()
-        {
-            return connection;
         }
 
         public bool IsConnectionOpen()
@@ -71,18 +65,12 @@ namespace Task_1
         {
             if (IsConnectionOpen())
             {
-                string newPos = "UPDATE units SET latitude = @latitude, longitude = @longitude WHERE ID = @ID";
-
-                using (var command = new SqlCommand(newPos, connection))
-                {
-                    command.Parameters.Add("@latitude", SqlDbType.Float).Value = latitude;
-                    command.Parameters.Add("@longitude", SqlDbType.Float).Value = longitude;
-                    command.Parameters.Add("@ID", SqlDbType.Int).Value = id;
-                    var rowsNum = command.ExecuteNonQuery();
-                    command.Parameters.Clear();
-                }
+                string lat = $"{latitude}".Replace(',', '.');
+                string lng = $"{longitude}".Replace(',', '.');
+                string newPos = $"UPDATE LocationDB SET latitude = {lat}, longitude = {lng} WHERE ID = {id}";
+                var command = new SqlCommand(newPos, connection);
+                command.ExecuteNonQuery();
             }
         }
-
     }
 }

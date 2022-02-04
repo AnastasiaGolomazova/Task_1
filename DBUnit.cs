@@ -4,21 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Task_1
 {
-    class DBUnit
+    class DBUnit 
     {
-        private int id { get; set; }
-        private string name { get; set; }
-        private double longitude { get; set; }
-        private double latitude { get; set; }
+        public int ID {  get; set; }
+        public string Name { get; set; }
+        public double Longitude { get; set; }
+        public double Latitude { get; set; }
 
-        public DBUnit(int id, string name, double latitude, double longitude)
+        public DBUnit(int ID, string Name, double Latitude, double Longitude)
         {
-            this.id = id;
-            this.name = name;
-            this.latitude = latitude;
-            this.longitude = longitude;
+            this.ID = ID;
+            this.Name = Name;
+            this.Latitude = Latitude;
+            this.Longitude = Longitude;
         }
+
     }
 }
