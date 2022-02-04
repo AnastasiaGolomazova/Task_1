@@ -20,6 +20,7 @@ namespace Task_1
 {
     public partial class Form1 : Form
     {
+        LocationDB dataBase = new LocationDB();
         public Form1()
         {
             InitializeComponent();
